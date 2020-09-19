@@ -10,6 +10,11 @@
 
 
 def my_func(x, y):
+    """
+    :param x: float > 0
+    :param y: int < 0
+    :return: pow(x, y)
+    """
     x = float(x)
     y = int(y)
     assert x > 0, "x действительное положительное число"
