@@ -23,7 +23,7 @@ def int_func(word):
     first_char_code = ord(word[0])
     # first_char_code between 'a' and 'z'
     if 97 <= first_char_code <= 122:
-        # a -> A...z->Z
+        # a -> A...z -> Z
         return chr(first_char_code - 32) + word[1:]
     else:
         return word
@@ -33,6 +33,5 @@ if __name__ == "__main__":
     string = input('Введите латинские слова, разделенные пробелом\n')
     print('Каждое латинское слово с заглавной буквы:\n')
     words = string.split(' ')
-    final_string = ''
     for word in words:
         print(int_func(word), end=' ')

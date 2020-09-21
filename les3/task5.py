@@ -12,7 +12,6 @@
 def parse_numbers(num_str):
     """
     :param num_str: string with numbers separated by ' '
-    :param summ: to sum numbers
     :return: tuple(bool, summ) True if num_str contains 'q', summ of elements in string
     """
     is_end = False
