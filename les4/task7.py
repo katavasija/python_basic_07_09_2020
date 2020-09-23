@@ -9,7 +9,7 @@
 
 def fact(n):
     if n < 0:
-        return None
+        raise ValueError('факториал отрицательного числа не определен')
     elif n == 0:
         return 1
     else:
