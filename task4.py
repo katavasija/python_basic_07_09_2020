@@ -10,6 +10,7 @@ speed, color, name, is_police (булево).
 При значении скорости свыше 60 (TownCar) и 40 (WorkCar) должно выводиться сообщение о превышении скорости.
 """
 
+
 class Car:
     SPEED_INCREMENT = 10
     DIRECTION_LEFT = 'налево'
@@ -59,6 +60,10 @@ class SportCar(Car):
         super().__init__(color=color, name=name, is_police=False)
         self.max_speed = 300
         self.speed_limit = 60
+
+    def go(self):
+        self._speed += 2 * Car.SPEED_INCREMENT
+        self.show_speed()
 
 
 class WorkCar(Car):
