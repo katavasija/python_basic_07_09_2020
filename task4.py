@@ -16,7 +16,7 @@ class Car:
     DIRECTION_LEFT = 'налево'
     DIRECTION_RIGHT = 'направо'
 
-    def __init__(self, color, name, is_police):
+    def __init__(self, color, name, is_police = False):
         self.color = color
         self.name = name
         self.is_police = is_police
@@ -82,6 +82,11 @@ class WorkCar(Car):
         if self._speed > self.speed_limit:
             print('Осторожно! Превышение скоростного режима')
         super().show_speed()
+
+
+class PoliceCar(Car):
+    def __init__(self, color, name):
+        super().__init__(color=color, name=name, is_police=True)
 
 
 if __name__ == "__main__":
