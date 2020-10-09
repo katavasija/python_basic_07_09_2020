@@ -62,7 +62,7 @@ class NaiveDate:
 		validate yyyy, mm, dd 
 		as date
 		"""
-		def isLeapYear(year):
+		def is_leap_year(year):
 			if year % 4 != 0:
 				return False
 			else:
@@ -94,7 +94,7 @@ class NaiveDate:
 						valid = False
 						raise LogicDateValueError('	значение дня задано неверно, должно быть не больше 30 для месяца {mm}')
 				if mm == 2:
-					if not isLeapYear(yyyy) and dd > 28:
+					if not is_leap_year(yyyy) and dd > 28:
 						valid = False
 						raise LogicDateValueError(f'	значение дня задано неверно, должно быть не больше 28 для месяца {mm}')
 				break
