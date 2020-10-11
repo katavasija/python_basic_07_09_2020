@@ -113,10 +113,6 @@ class NaiveDate:
 				print(f'дата {date_str} задана верно')
 
 
-	def __str__(self):
-		return f'{(self.a, self.b)}' 
-
-
 if __name__ == "__main__":
 	d = NaiveDate('2024 13-31')
 	d = NaiveDate('333-33-33')
