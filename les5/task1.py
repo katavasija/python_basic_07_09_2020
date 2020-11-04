@@ -11,7 +11,7 @@ if __name__ == "__main__":
     input_str = input("Введите строку для записи в файл, нажмите Enter (пустая строка для окончания)\n")
     if len(input_str):
         lines_count = 0
-        file_name = 'temp.txt'
+        file_name = '../temp.txt'
         file_folder = os.path.dirname(__file__)
 
         # file full path
